@@ -13,16 +13,15 @@ script:
 
 after_script:
   - npm run build
-  - cd ./news-master/dist
+  - cd ./dist
   - git init
-  - git config user.name "fyc1007261"
-  - git config user.email "fyc1007261@live.com"
+  - git config user.name "BarackO"
+  - git config user.email "yanghongliu2013@outlook.com"
   - git add .
   - git commit -m "Update docs"
   - git push --force --quiet "https://${GithubToken}@${GH_REF}" master:master
   
 env:
  global:
-   - GH_REF: github.com/fyc1007261/News-overview.git
-
+   - GH_REF: github.com/BarackO/Ubuntu.git
 
